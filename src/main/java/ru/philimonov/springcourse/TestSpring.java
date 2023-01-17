@@ -8,10 +8,12 @@ public class TestSpring {
 //        Music music = ctx.getBean("musicBean", Music.class);
 //        MusicPlayer player = new MusicPlayer(music);
 
-        MusicPlayer player = ctx.getBean("musicPlayer", MusicPlayer.class);
-        player.playMusic();
-        System.out.println("player title is: " + player.getName());
-        System.out.println("player volume is: " + player.getVolume());
+        MusicPlayer player1 = ctx.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer player2 = ctx.getBean("musicPlayer", MusicPlayer.class);
+
+        System.out.println("player1 == player2: " + (player1 == player2));
+        System.out.println(player1);
+        System.out.println(player2);
         ctx.close();
     }
 }
