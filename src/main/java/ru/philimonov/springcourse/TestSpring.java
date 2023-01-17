@@ -28,6 +28,10 @@ public class TestSpring {
         MusicPlayer player = ctx.getBean("musicPlayer", MusicPlayer.class);
         System.out.println("player name: " + player.getName());
         System.out.println("player volume: " + player.getVolume());
+
+        Music classicalMusic1 = ctx.getBean("classicalMusic", Music.class);
+        Music classicalMusic2 = ctx.getBean("classicalMusic", Music.class);
+        System.out.println("classicalMusic2==classicalMusic1 - " + (classicalMusic2==classicalMusic1));
         ctx.close();
     }
 }
