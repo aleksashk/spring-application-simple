@@ -18,9 +18,12 @@ public class TestSpring {
 //        player1.setVolume(10);
 //        System.out.println(player1.getVolume());
 //        System.out.println(player2.getVolume());
+//
+//        MusicPlayer player = ctx.getBean("musicPlayer", MusicPlayer.class);
+//        player.playMusic();
 
-        MusicPlayer player = ctx.getBean("musicPlayer", MusicPlayer.class);
-        player.playMusic();
+        Computer computer = ctx.getBean("computer", Computer.class);
+        System.out.println(computer);
         ctx.close();
     }
 }
