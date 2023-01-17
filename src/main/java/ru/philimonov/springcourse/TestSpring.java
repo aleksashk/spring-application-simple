@@ -19,12 +19,7 @@ public class TestSpring {
 //        System.out.println(player1.getVolume());
 //        System.out.println(player2.getVolume());
 
-        Music music1 = ctx.getBean("classicalMusic", Music.class);
-        System.out.println(music1.getSong());
-        Music music2 = ctx.getBean("rockMusic", Music.class);
-        System.out.println(music2.getSong());
-
-        MusicPlayer player = new MusicPlayer(music2);
+        MusicPlayer player = ctx.getBean("musicPlayer", MusicPlayer.class);
         player.playMusic();
         ctx.close();
     }
