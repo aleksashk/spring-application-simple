@@ -7,15 +7,16 @@
     <context:property-placeholder location="classpath:application.properties"/>
     <bean id="musicBean"
           class="ru.philimonov.springcourse.ClassicalMusic"
-    init-method="doMyInit"
-    destroy-method="doMyDestroy">
+          init-method="doMyInit"
+          destroy-method="doMyDestroy"
+          factory-method="getClassicalMusic">
     </bean>
-<!--    <bean id="musicPlayer"-->
-<!--          class="ru.philimonov.springcourse.MusicPlayer"-->
-<!--          scope="prototype">-->
-<!--        <property name="music" ref="musicBean"/>-->
-<!--        <property name="name" value="${musicPlayer.name}"/>-->
-<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
-<!--    </bean>-->
+    <!--    <bean id="musicPlayer"-->
+    <!--          class="ru.philimonov.springcourse.MusicPlayer"-->
+    <!--          scope="prototype">-->
+    <!--        <property name="music" ref="musicBean"/>-->
+    <!--        <property name="name" value="${musicPlayer.name}"/>-->
+    <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+    <!--    </bean>-->
 
 </beans>
