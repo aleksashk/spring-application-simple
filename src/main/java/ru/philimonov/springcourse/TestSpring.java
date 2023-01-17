@@ -22,8 +22,12 @@ public class TestSpring {
 //        MusicPlayer player = ctx.getBean("musicPlayer", MusicPlayer.class);
 //        player.playMusic();
 
-        Computer computer = ctx.getBean("computer", Computer.class);
-        System.out.println(computer);
+//        Computer computer = ctx.getBean("computer", Computer.class);
+//        System.out.println(computer);
+
+        MusicPlayer player = ctx.getBean("musicPlayer", MusicPlayer.class);
+        System.out.println("player name: " + player.getName());
+        System.out.println("player volume: " + player.getVolume());
         ctx.close();
     }
 }
