@@ -1,5 +1,8 @@
 package ru.philimonov.springcourse;
 
+import org.springframework.stereotype.Component;
+
+@Component("musicBean")
 public class ClassicalMusic implements Music {
     private ClassicalMusic() {
     }
@@ -11,13 +14,5 @@ public class ClassicalMusic implements Music {
     @Override
     public String getSong() {
         return "Hungarian rhapsody";
-    }
-
-    public void doMyInit() {
-        System.out.println("doing initialization!!!");
-    }
-
-    public void doMyDestroy() {
-        System.out.println("doing destruction!!!");
     }
 }
