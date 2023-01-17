@@ -8,7 +8,7 @@ public class Computer {
     private int id;
     private MusicPlayer player;
 
-    @Autowired
+
     public Computer(MusicPlayer player) {
         this.id = 1;
         this.player = player;
