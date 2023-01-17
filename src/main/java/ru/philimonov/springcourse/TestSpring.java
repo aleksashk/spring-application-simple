@@ -10,6 +10,8 @@ public class TestSpring {
 
         MusicPlayer player = ctx.getBean("musicPlayer", MusicPlayer.class);
         player.playMusic();
+        System.out.println("player title is: " + player.getName());
+        System.out.println("player volume is: " + player.getVolume());
         ctx.close();
     }
 }

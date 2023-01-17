@@ -10,6 +10,8 @@
     <bean id="musicPlayer"
           class="ru.philimonov.springcourse.MusicPlayer">
         <property name="music" ref="musicBean"/>
+        <property name="name" value="WinAMP"/>
+        <property name="volume" value="40"/>
     </bean>
 
 </beans>
