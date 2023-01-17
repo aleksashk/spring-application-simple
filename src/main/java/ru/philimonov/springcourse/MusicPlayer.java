@@ -1,5 +1,8 @@
 package ru.philimonov.springcourse;
 
+import org.springframework.stereotype.Component;
+
+
 public class MusicPlayer {
     private Music music;
     private String name;
