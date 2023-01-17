@@ -9,7 +9,8 @@
           class="ru.philimonov.springcourse.ClassicalMusic">
     </bean>
     <bean id="musicPlayer"
-          class="ru.philimonov.springcourse.MusicPlayer">
+          class="ru.philimonov.springcourse.MusicPlayer"
+          scope="prototype">
         <property name="music" ref="musicBean"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
