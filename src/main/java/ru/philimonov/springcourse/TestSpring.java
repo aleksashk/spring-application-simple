@@ -14,6 +14,10 @@ public class TestSpring {
         System.out.println("player1 == player2: " + (player1 == player2));
         System.out.println(player1);
         System.out.println(player2);
+
+        player1.setVolume(10);
+        System.out.println(player1.getVolume());
+        System.out.println(player2.getVolume());
         ctx.close();
     }
 }
